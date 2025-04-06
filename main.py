@@ -73,7 +73,6 @@ def main():
         else:
             save_password(site, generated_password)
             print("💾 Hasło zapisane w pliku dane.txt (bez szyfrowania)")
-    
     except ValueError:
         print("❌ niepoprawna liczba, wpisz ponownie poprawna")
 
