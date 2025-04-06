@@ -7,7 +7,7 @@ for lib in required_libraries:
     try:
         importlib.import_module(lib)
     except ImportError:
-        print(f"📦 Biblioteka '{lib}' nie została znaleziona. Instaluję...")
+        print(f"📦 biblioteka '{lib}' nie jest wgrana, wgrywam...")
         subprocess.check_call([sys.executable, "-m", "pip", "install", lib])
 
 import random
@@ -19,7 +19,7 @@ from cryptography.fernet import Fernet
 
 def generate_password(length):
     if length < 4:
-        return "Password must be at least 4 characters long."
+        return "Hasło musi byc o długości conajmniej 4 znaków"
 
     characters = string.ascii_letters + string.digits + string.punctuation
     password = ''.join(random.choice(characters) for _ in range(length))
@@ -28,7 +28,7 @@ def generate_password(length):
 def create_file_if_not_exists(filename):
     if not os.path.exists(filename):
         with open(filename, 'w', encoding='utf-8') as file:
-            file.write("🔒 Menedżer haseł - zapisane dane 🔒\n")
+            file.write("🔒 Menedżer haseł - zapisane strony i hasła do nich 🔒\n")
             file.write("=======================================\n\n")
 
 def save_password(site, password):
@@ -75,7 +75,7 @@ def main():
             print("💾 Hasło zapisane w pliku dane.txt (bez szyfrowania)")
     
     except ValueError:
-        print("❌ Wpisz poprawną liczbę!")
+        print("❌ niepoprawna liczba, wpisz ponownie poprawna")
 
 if __name__ == "__main__":
     main()
