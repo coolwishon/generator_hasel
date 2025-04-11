@@ -34,11 +34,11 @@ w tym momencie hasło nie wyświetla się w systemie.
  
 ## Odpowiedzialność
 Użytkujesz programu na własną odpowiedzialność. Nie odpowiadam za skradzione hasła. Hackerzy wciąż mogą przechwytywać wpisywane/generowane/kopiowane hasła.
--Szczególnie gdy posiadasz zainfekowany komputer np. keyloggery, spyware, malware
--Są malware które obserwują schowek i kradną hasła gdy je kopiujesz do schowka 
--Jeśli ktoś włamie ci się na komputer na dostęp do pliku dane.txt
+Szczególnie gdy posiadasz zainfekowany komputer np. keyloggery, spyware, malware. Są malware które obserwują schowek i kradną hasła gdy je kopiujesz do schowka. Jeśli ktoś włamie ci się na komputer ma dostęp do pliku dane.txt
 
 ## Wymogi
 - Python 3.x
 
 ## Plany na przyszłośc
+Dodanie funkcji generowanie hasła na podstawie łapliwej nazwy zależnej woli użytkownika. Użytkownik wpisuje słowo klucz a program generuje hasło z zmienionymi i dodanymi znakami.
+Przykładowo. Użytwkonik wpisuje proponowane hasło "pies" a program zamienia "pies" na "p13ES@31"
